@@ -8,25 +8,7 @@ import MobileHeaderModal from "./MobileHeaderModal";
 const Header = () => {
   const router = useRouter();
   const [navigation, toggleNavigation] = useState(false);
-  const lagRef = useRef<any>();
-  const lagCircleRef = useRef<any>();
 
-  useEffect(() => {
-    const checkIfClickedOutside = (e: any) => {
-      if (
-        navigation &&
-        lagRef.current &&
-        !lagCircleRef.current.contains(e.target) &&
-        !lagRef.current.contains(e.target)
-      ) {
-        toggleNavigation(false);
-      }
-    };
-    document.addEventListener("mousedown", checkIfClickedOutside);
-    return () => {
-      document.removeEventListener("mousedown", checkIfClickedOutside);
-    };
-  }, [navigation]);
 
   return (
     <header className="bg-[#323232]/70 h-[80px] flex items-center justify-start text-left shadow-lg">
@@ -69,8 +51,6 @@ const Header = () => {
       </div>
       {navigation && (
         <MobileHeaderModal
-          lagCircleRef={lagCircleRef}
-          lagRef={lagRef}
           navigation={navigation}
           toggleNavigation={toggleNavigation}
         />
