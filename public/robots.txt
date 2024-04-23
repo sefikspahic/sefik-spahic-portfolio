@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sefik-spahic.netlify.app/
+
+# Sitemaps
+Sitemap: https://dev.rehype.io/sitemap.xml
+Sitemap: https://dev.rehype.io/server-sitemap.xml
