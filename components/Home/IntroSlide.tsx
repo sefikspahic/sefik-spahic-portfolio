@@ -5,7 +5,7 @@ const IntroSlide = () => {
   const [showBtn, setShowBtn] = useState(false);
 
   const fullText =
-    "Hello, I'm Šefik Spahić, I'm Frontend Developer from Sarajevo, BiH!";
+    "Hello, I'm Šefik Spahić, I'm Frontend Developer";
 
   useEffect(() => {
     let i = 0;

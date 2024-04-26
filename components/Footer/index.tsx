@@ -40,7 +40,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-white hover:text-black" size={30} />
+            <FaGithub className="text-white hover:shadow-lg hover:shadow-black  hover:text-[#e4e0e0] " size={30} />
           </a>
         </div>
       </div>

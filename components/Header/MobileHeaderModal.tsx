@@ -37,41 +37,45 @@ const MobileHeaderModal = ({
   return (
     <div
       ref={lagCircleRef}
-      className="w-full h-auto max-w-[314px] bg-[#FFFFFF] fixed top-0 left-0 bottom-0 z-[22] overflow-y-auto px-[24px] sm:px-[32px] pt-[53px] text-black"
+      className="w-full h-auto max-w-[314px]  bg-[#24282c]   border-r-[3px] border-r-[#18D26F] fixed   top-0 left-0 bottom-0 z-[22] overflow-y-auto px-[24px] sm:px-[32px] pt-[53px] text-white"
     >
       <div ref={lagRef} className="flex flex-col items-start">
         <button
           type="button"
           onClick={() => toggleNavigation(!navigation)}
-          className="z-[5] relative"
+          className="z-[5] relative flex justify-end w-full"
         >
           {!navigation ? (
-            <FontAwesomeIcon icon={faBars} size="xl" color="black" />
+            <FontAwesomeIcon icon={faBars} size="xl" color="white" />
           ) : (
-            <FontAwesomeIcon icon={faClose} size="xl" color="black" />
+            <FontAwesomeIcon icon={faClose} size="xl" color="white" />
           )}
         </button>
         <button
+        className="h-[50px] tracking-[0.15em]  border-b-[1px] w-full text-left"
           onClick={() => {
             toggleNavigation(!navigation);
             router.push("/");
           }}
         >
-          home
+          Home
         </button>
         <button
           onClick={() => {
             toggleNavigation(!navigation);
             router.push("/about");
           }}
+          className="h-[50px] tracking-[0.15em]  border-b-[1px] w-full text-left"
         >
           About
         </button>
+
         <button
           onClick={() => {
             toggleNavigation(!navigation);
             router.push("/projects");
           }}
+          className="h-[50px] tracking-[0.15em]  border-b-[1px] w-full text-left"
         >
           Projects
         </button>

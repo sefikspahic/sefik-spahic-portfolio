@@ -1,19 +1,23 @@
 import WorkCard from "@/components/about/WorkCard";
-import React from "react";
+import React, { useState } from "react";
 import data from "@/components/about/WorkExperineceModal.json";
 import Stack from "@/components/about/Stack";
-
+import Education from "@/components/about/Education";
 
 const About = () => {
   const {MBSmart} = data;
   const {Meshmind} = data;
+  const [showMore, setShowMore] = useState(false);
 
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
   return (
     <section className="px-[24px] sm:px-[32px] mt-[20px] sm:mt-[30px] lg:mt-[40px] mb-[70px]">
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         WHO AM I?
       </div>
-      <div className="text-[15px] font-[300] text-justify mt-[15px] sm:mt-[20px] lg:mt-[25px] leading-[25px] lg:leading-[40px] ">
+      <div className={`${!showMore ? 'max-sm:line-clamp-4' : ''} text-[15px] font-[300] text-justify mt-[15px] sm:mt-[20px] lg:mt-[25px] leading-[25px] lg:leading-[40px] `}>
         Hi, my name is Šefik and I'm a Frontend Developer. I have a passion for
         creating beautiful, intuitive, and responsive user interfaces that
         deliver a great user experience. I have extensive experience using
@@ -21,23 +25,28 @@ const About = () => {
         maintainable web applications. I'm also proficient in other related
         technologies, including Next.js for server-side rendering, HTML and CSS
         for web development, and Tailwind CSS for styling. In addition, I have
-        experience working with Redux, a state management library, to manage the
-        state of complex applications and ensure a smooth flow of data between
-        components. My expertise in these technologies allows me to build
-        dynamic, interactive, and visually appealing web applications that meet
-        modern standards and best practices. I'm also passionate about staying
-        up-to-date with the latest trends and technologies in the frontend
-        development world. I'm constantly learning and exploring new tools and
-        techniques to improve my skills and stay at the forefront of the
-        industry. If you're looking for a skilled and motivated React Frontend
-        Developer to build your next web application, feel free to contact me.
-        I'm always excited to take on new challenges and deliver high-quality
-        results that meet your needs and exceed your expectations.
+        experience working with useContext, a state management library, to
+        manage the state of complex applications and ensure a smooth flow of
+        data between components. My expertise in these technologies allows me to
+        build dynamic, interactive, and visually appealing web applications that
+        meet modern standards and best practices. I'm also passionate about
+        staying up-to-date with the latest trends and technologies in the
+        frontend development world. I'm constantly learning and exploring new
+        tools and techniques to improve my skills and stay at the forefront of
+        the industry. If you're looking for a skilled and motivated React
+        Frontend Developer to build your next web application, feel free to
+        contact me. I'm always excited to take on new challenges and deliver
+        high-quality results that meet your needs and exceed your expectations.
       </div>
+   
+      <button className="underline sm:hidden mt-[15px]" onClick={handleShowMore}>
+        {!showMore ? "Read more": "Show less"}
+      </button>
+ 
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         STACK
       </div>
-  <Stack/>
+      <Stack />
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         WORK EXPERIENCE
       </div>
@@ -90,6 +99,7 @@ const About = () => {
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         EDUCATION
       </div>
+      <Education/>
     </section>
   );
 };
