@@ -7,6 +7,8 @@ import Education from "@/components/about/Education";
 const About = () => {
   const {MBSmart} = data;
   const {Meshmind} = data;
+  const {TLG} = data;
+
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => {
@@ -66,6 +68,15 @@ const About = () => {
           to="Present"
           work="Full time"
           dataForModal={MBSmart}
+        />
+        <WorkCard
+          company="TLG Marketing"
+          position="(Wordpress and Shopify dev)"
+          from="Nov 2023"
+          country="USA, California (Remote)"
+          to="Mar 2024"
+          work="Part time"
+          dataForModal={TLG}
         />
         <WorkCard
           company="Meshmind"
