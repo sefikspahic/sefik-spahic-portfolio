@@ -6,6 +6,7 @@ interface WorkExperienceParams {
   position: string;
   from: string;
   to: string;
+  country: string;
   work: string;
   dataForModal?: any;
 }
@@ -15,6 +16,7 @@ const WorkCard = ({
   position,
   from,
   to,
+  country,
   work,
   dataForModal
 }: WorkExperienceParams) => {
@@ -29,6 +31,7 @@ const WorkCard = ({
               <h2>
                 {from}-{to}
               </h2>
+              <div className="jobtype">{country}</div>
               <div>{work}</div>
               <h3>{company}</h3>
               <p>{position}</p>
@@ -42,6 +45,7 @@ const WorkCard = ({
         <div className="min-w-[200px] lg:min-w-[550px] text-black mt-[0px]">
           <div className="text-[22px]">{company}</div>
           <div className="text-[18px]">{position}</div>
+          <div className="text-[15px] italic ">{country}</div>
           <div className="text-[15px]">{from}-{to}</div>
           <div dangerouslySetInnerHTML={{ __html: dataForModal }} />
         </div>

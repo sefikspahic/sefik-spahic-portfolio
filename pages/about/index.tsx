@@ -1,5 +1,5 @@
 import WorkCard from "@/components/about/WorkCard";
-import React, { useState } from "react";
+import React, {useState} from "react";
 import data from "@/components/about/WorkExperineceModal.json";
 import Stack from "@/components/about/Stack";
 import Education from "@/components/about/Education";
@@ -17,7 +17,11 @@ const About = () => {
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         WHO AM I?
       </div>
-      <div className={`${!showMore ? 'max-sm:line-clamp-4' : ''} text-[15px] font-[300] text-justify mt-[15px] sm:mt-[20px] lg:mt-[25px] leading-[25px] lg:leading-[40px] `}>
+      <div
+        className={`${
+          !showMore ? "max-sm:line-clamp-4" : ""
+        } text-[15px] font-[300] text-justify mt-[15px] sm:mt-[20px] lg:mt-[25px] leading-[25px] lg:leading-[40px] `}
+      >
         Hi, my name is Šefik and I'm a Frontend Developer. I have a passion for
         creating beautiful, intuitive, and responsive user interfaces that
         deliver a great user experience. I have extensive experience using
@@ -38,11 +42,14 @@ const About = () => {
         contact me. I'm always excited to take on new challenges and deliver
         high-quality results that meet your needs and exceed your expectations.
       </div>
-   
-      <button className="underline sm:hidden mt-[15px]" onClick={handleShowMore}>
-        {!showMore ? "Read more": "Show less"}
+
+      <button
+        className="underline sm:hidden mt-[15px]"
+        onClick={handleShowMore}
+      >
+        {!showMore ? "Read more" : "Show less"}
       </button>
- 
+
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         STACK
       </div>
@@ -55,6 +62,7 @@ const About = () => {
           company="MB Smart"
           position="(Front-end developer)"
           from="Jul 2022"
+          country="Germany (Remote)"
           to="Present"
           work="Full time"
           dataForModal={MBSmart}
@@ -64,6 +72,7 @@ const About = () => {
           position="(Team Lead Data Analyst)"
           from="Jun 2022"
           to="Nov 2022"
+          country="Bosnia (Hybrid)"
           work="Full time"
           dataForModal={Meshmind}
         />
@@ -72,6 +81,7 @@ const About = () => {
           position="(Team Lead Data Analyst)"
           from="Mar 2021"
           to="Jun 2022"
+          country="Bosnia (On-site)"
           work="Full time"
         />
         <WorkCard
@@ -79,6 +89,7 @@ const About = () => {
           position="(Students Team Lead Data Analyst)"
           from="Aug 2020"
           to="Mar 2021"
+          country="Bosnia (On-site)"
           work="Full time"
         />
         <WorkCard
@@ -86,11 +97,13 @@ const About = () => {
           position="(Data Analyst)"
           from="Apr 2019"
           to="Mar 2021"
+          country="Bosnia (On-site)"
           work="Full time"
         />
         <WorkCard
           company="SKIDATA"
           position="(Data Analyst)"
+          country="Austria (On-site)"
           from="Feb 2018 "
           to="Jul 2018"
           work="Full time"
@@ -99,7 +112,7 @@ const About = () => {
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         EDUCATION
       </div>
-      <Education/>
+      <Education />
     </section>
   );
 };
