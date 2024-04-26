@@ -26,7 +26,7 @@ const AboutMe = () => {
       </div>
 <div className="">
 
-  <Image src={ProfilImg} className="sm:float-left w-full max-sm:mt-[10px] sm:w-[300px] mr-[20px] border-[4px] rounded-[15px] border-solid border-[#18D26F]  stroke-orange-50" alt=""/> 
+  <Image src={ProfilImg} className="sm:float-left w-full max-sm:mt-[10px] sm:w-[300px] mr-[20px] border-[4px] rounded-[15px] border-solid profileImg border-[#18D26F]  stroke-orange-50" alt=""/> 
  <p  className="text-[15px] first-letter:text-[40px]  font-[300] text-justify mt-[15px] sm:mt-[20px] lg:mt-[25px] leading-[25px] lg:leading-[40px]   ">
         Hi, my name is Šefik and I'm a Frontend Developer. I have a passion for
         creating beautiful, intuitive, and responsive user interfaces that

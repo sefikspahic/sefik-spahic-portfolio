@@ -8,7 +8,7 @@ const EducationCard = ({image, university, department, desc}: any) => {
         <div className="educatincard !h-auto p-[15px]">
           <div className="max-sm:flex-col  flex items-center">
             <div>
-              <Image className="min-w-[100px] w-[100px] h-auto" src={image} alt="" />
+              <Image className="min-w-[100px] bg-white h-[100px] rounded-[10px] w-[100px] " src={image} alt="" />
             </div>
             <div className="max-sm:text-center sm:ml-[2em]">
               <div className=" font-[600] text-[20px]">{university}</div>
