@@ -25,13 +25,13 @@ const Stack = () => {
   return (
     <div className="flex flex-wrap max-sm:justify-center">
       <StackCard image={ReactIcon} title="Raect" />
-      <div className="w-[100px] text-center m-[20px] flex flex-col items-center justify-between">
+      <div className="w-[60px] sm:w-[100px] text-center m-[20px] flex flex-col items-center justify-between">
         <Image
           className="mx-auto bg-white rounded-full  border-[1px] border-white"
           src={NextIcon}
           alt="Next JS"
         />
-        <div className="font-[500] mt-[10px]">Next JS</div>
+        <div className="font-[500] max-sm:text-[15px] mt-[10px]">Next JS</div>
       </div>
       <StackCard image={JSIcon} title="JavaScript" />
       <StackCard image={TSIcon} title="TypeScrip" />
@@ -41,13 +41,13 @@ const Stack = () => {
       <StackCard image={TailwindIcon} title="Tailwind CSS" />
       <StackCard image={FigmaIcon} title=" Figma" />
       <StackCard image={WPIcon} title="Wordpress" />
+      <StackCard image={ShopifyIcon} title="Shopify" />
       <StackCard image={SemanticIcon} title="Semantic UI" />
       <StackCard image={BostrapIcon} title="Bootstrap" />
       <StackCard image={MaterialIcon} title="Material UI" />
-      <StackCard image={ShopifyIcon} title="Shopify" />
+      <StackCard image={AdobeIcon} title="Adobe XD" />
       <StackCard image={JIraIcon} title="Jira" />
       <StackCard image={SlacIcon} title="Slack" />
-      <StackCard image={AdobeIcon} title="Adobe XD" />
       <StackCard image={NotionIcon} title="Notion" />
     </div>
   );
