@@ -3,7 +3,7 @@ import React from "react";
 import ProfilImg from "../../public/assets/img/1714080199327.png";
 const AboutMe = () => {
   const handleDownloadClick = () => {
-    const cvPath = "/document/Šefik SpahićCV.pdf";
+    const cvPath = "/document/CV - Šefik Spahić .pdf";
 
     const absoluteCvPath = new URL(cvPath, window.location.origin);
 
