@@ -31,7 +31,7 @@ const WorkCard = ({
               <h2>
                 {from}-{to}
               </h2>
-              <div className="jobtype">{country}</div>
+              <div className="jobtype max-sm:!top-[25px]">{country}</div>
               <div>{work}</div>
               <h3>{company}</h3>
               <p>{position}</p>
@@ -44,7 +44,7 @@ const WorkCard = ({
       <Modal open={readMore} onClose={onCloseModal} center>
         <div className="min-w-[200px] lg:min-w-[550px] text-black mt-[0px]">
           <div className="text-[22px]">{company}</div>
-          <div className="text-[18px]">{position}</div>
+          <div className="text-[18px] ">{position}</div>
           <div className="text-[15px] italic ">{country}</div>
           <div className="text-[15px]">{from}-{to}</div>
           <div dangerouslySetInnerHTML={{ __html: dataForModal }} />
