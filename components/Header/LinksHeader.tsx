@@ -22,7 +22,7 @@ const LinksHeader = ({router, active, title, location}: HeaderLinksProps) => {
     <Link
       href={{pathname: location}}
       locale={router.locale}
-      className={`px-[40px] text-black lg:text-white hover:text-[#cfcfcf]   ${activeLink(
+      className={`px-[40px] text-black lg:text-white hover:text-[#cfcfcf]  ${activeLink(
         active
       )}`}
     >
