@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import data from "@/components/about/WorkExperineceModal.json";
 import Stack from "@/components/about/Stack";
 import Education from "@/components/about/Education";
+import PageMetatags from "@/components/reusable/PageMetatags";
 
 const About = () => {
   const {MBSmart} = data;
@@ -16,6 +17,7 @@ const About = () => {
   };
   return (
     <section className="px-[24px] sm:px-[32px] mt-[20px] sm:mt-[30px] lg:mt-[40px] mb-[70px]">
+      <PageMetatags title="About" />
       <div className="text-[18px] sm:text-[20px] lg:text-[30px] tracking-[0.25em] pt-[20px] font-[700]">
         WHO AM I?
       </div>

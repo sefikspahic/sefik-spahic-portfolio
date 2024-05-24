@@ -7,7 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-#__next{
+#__next {
   height: 100%;
 }
 @media (prefers-color-scheme: dark) {
@@ -18,11 +18,12 @@
   }
 }
 
-html, body {
-  color: #FFFFFF;
+html,
+body {
+  color: #ffffff;
   background: #000000;
 
-    height: 100%;
+  height: 100%;
 }
 
 @layer utilities {
@@ -34,7 +35,7 @@ html, body {
   border: 2px solid #ffffff;
   color: #ffffff;
 
-  background-image: linear-gradient(#ffffff , #ffffff );
+  background-image: linear-gradient(#ffffff, #ffffff);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
@@ -44,8 +45,6 @@ html, body {
 .buttonanimation:hover {
   background-size: 100% 100%;
   color: #000000;
-  
-
 }
 
 .ag-courses_box {
@@ -82,7 +81,7 @@ html, body {
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 .ag-courses-item_link:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
@@ -94,13 +93,13 @@ html, body {
   overflow: hidden;
   font-weight: bold;
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
   z-index: 2;
   position: relative;
 }
 .ag-courses-item_date-box {
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 
   z-index: 2;
   position: relative;
@@ -109,9 +108,9 @@ html, body {
   font-weight: bold;
   color: #f9b234;
 
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 .ag-courses-item_bg {
   min-height: 128px;
@@ -125,9 +124,9 @@ html, body {
 
   border-radius: 50%;
 
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
   background-color: #3ecd5e;
@@ -145,8 +144,6 @@ html, body {
   background-color: #4c49ea;
 }
 
-
-
 @media only screen and (max-width: 979px) {
   .ag-courses_item {
     -ms-flex-preferred-size: calc(50% - 30px);
@@ -161,7 +158,6 @@ html, body {
   .ag-format-container {
     width: 96%;
   }
-
 }
 @media only screen and (max-width: 639px) {
   .ag-courses_item {
@@ -182,8 +178,7 @@ html, body {
   }
 }
 
-
- .container .card {
+.container .card {
   position: relative;
   height: 340px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
@@ -214,18 +209,16 @@ html, body {
   transition: 0.9s;
 }
 .profileImg {
-
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3),
     inset -5px -5px 15px rgba(24, 210, 111, 0.2),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(24, 210, 111, 0.2);
 }
 
- .container .card:nth-child(1) .box .content button {
+.container .card:nth-child(1) .box .content button {
   background: #2196f3;
 }
 
-
- .container .card .box {
+.container .card .box {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -240,11 +233,11 @@ html, body {
   transition: 0.5s;
 }
 
- .container .card .box:hover {
+.container .card .box:hover {
   transform: translateY(-50px);
 }
 
- .container .card .box:before {
+.container .card .box:before {
   content: "";
   position: absolute;
   top: 0;
@@ -254,12 +247,12 @@ html, body {
   background: rgba(255, 255, 255, 0.03);
 }
 
- .container .card .box .content {
+.container .card .box .content {
   padding: 20px;
   text-align: center;
 }
 
- .container .card .box .content h2 {
+.container .card .box .content h2 {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -273,7 +266,7 @@ html, body {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.4);
 }
- .container .card .box .content h3 {
+.container .card .box .content h3 {
   font-size: 1.8rem;
   color: #fff;
   z-index: 1;
@@ -281,7 +274,7 @@ html, body {
   margin-bottom: 15px;
 }
 
- .container .card .box .content p {
+.container .card .box .content p {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
@@ -289,7 +282,7 @@ html, body {
   transition: 0.5s;
 }
 
- .container .card .box .content button {
+.container .card .box .content button {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
@@ -301,8 +294,35 @@ html, body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
- .container .card .box .content button:hover {
+.container .card .box .content button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
-  color: #000;
+}
+
+.link-bg:after {
+  display: block;
+  content: "";
+  width: inherit;
+  border-bottom: solid 2px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.link-bg:hover:after {
+  transform: scaleX(1);
+}
+
+.link-active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  border-radius: 7px;
+}
+
+.link-active:hover {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0 0.5em 0em #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  stroke: #000000;
 }
