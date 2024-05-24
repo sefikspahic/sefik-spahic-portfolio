@@ -2,10 +2,12 @@ import Card from "@/components/project/Card";
 import React from "react";
 import {LiveProject} from "../../components/project/LIveProject";
 import {InactiveProject} from "../../components/project/InactiveProject";
+import PageMetatags from "@/components/reusable/PageMetatags";
 
 const Projects = () => {
   return (
     <section className="px-[24px] sm:px-[32px] pt-[15px]">
+            <PageMetatags title="Project" />
       <div className="text-[20px] lg:text-[25px] font-[700] text-[#f9b234] tracking-[0.25em]  uppercase">
         Live project
       </div>

@@ -1,30 +1,29 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import React from "react";
 
 export interface HeaderLinksProps {
-  router: {
+  router?: {
     pathname: string;
     locale?: string | undefined;
   };
   active: string;
   title: string;
-  location: string;
+  location: any;
 }
 
-const LinksHeader = ({router, active, title, location}: HeaderLinksProps) => {
-  const activeLink = (firstSegment: string) => {
-    if (router.pathname.search(firstSegment) == 1)
-      return "text-black lg:text-[#3498db] ";
-    else return "text-black lg:text-[#ffffff]";
-  };
-
+const LinksHeader = ({ active, title, location}: HeaderLinksProps) => {
+  
+  const router = useRouter();
+  const isActive = router.pathname === location;
+  console.log(isActive , "lokacija");
+  
   return (
     <Link
       href={{pathname: location}}
       locale={router.locale}
-      className={`px-[40px] text-black lg:text-white hover:text-[#cfcfcf]  ${activeLink(
-        active
-      )}`}
+      className={`px-[40px]  font-[500]  ${isActive ? "link-active ": "link-bg"}`}
     >
       {title}
     </Link>
